@@ -4,6 +4,7 @@ import {
   FaFacebookF,
   FaYoutube,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -34,7 +35,6 @@ const Footer = () => {
         >
           <FaFacebookF size={18} />
         </a>
-  
       </div>
 
       {/* Footer Section */}
@@ -54,16 +54,16 @@ const Footer = () => {
             <h4 className="text-yellow-500 font-semibold mb-3">Quick Links</h4>
             <ul>
               <li className="mb-2">
-                <a href="/" className="hover:text-yellow-500 transition">Home</a>
+                <Link to="/" className="hover:text-yellow-500 transition">Home</Link>
               </li>
               <li className="mb-2">
-                <a href="/products" className="hover:text-yellow-500 transition">Products</a>
+                <Link to="/products" className="hover:text-yellow-500 transition">Products</Link>
               </li>
               <li className="mb-2">
-                <a href="/about" className="hover:text-yellow-500 transition">About</a>
+                <Link to="/about" className="hover:text-yellow-500 transition">About</Link>
               </li>
               <li className="mb-2">
-                <a href="/contact" className="hover:text-yellow-500 transition">Contact</a>
+                <Link to="/contact" className="hover:text-yellow-500 transition">Contact</Link>
               </li>
             </ul>
           </div>
